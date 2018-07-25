@@ -25,7 +25,11 @@ class Game
     WIN_COMBINATIONS.detect do |combo|
     @board.cells[combo[0]] == @board.cells[combo[1]] &&
     @board.cells[combo[1]] == @board.cells[combo[2]] &&
+<<<<<<< HEAD
     (@board.cells[combo[0]] == "X" || @board.cells[combo[0]] == "O")
+=======
+    @board.taken?(combo[0]+1)
+>>>>>>> 0d3fad2d3f1ca8ef5f53f84f958030133df52539
     end
   end
   
